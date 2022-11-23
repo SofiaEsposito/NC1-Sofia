@@ -78,6 +78,7 @@
 		32C1E158292E543100F4CD00 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				32C1E160292E811800F4CD00 /* Button.swift */,
 				32C1E15A292E545600F4CD00 /* Card.swift */,
 			);
 			path = Model;
@@ -87,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				32C1E15C292E548C00F4CD00 /* Home.swift */,
-				32C1E160292E811800F4CD00 /* Button.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

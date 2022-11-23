@@ -28,7 +28,7 @@ struct Home: View {
                             } label: {
                                 Text("Done")
                                     .padding(10)
-                                
+                                    .fontWeight(.semibold)
                             }
                             .rotationEffect(.init(degrees: expandCards ? 0 :  0))
                             .offset(x: expandCards ? 10 : 15 )
@@ -40,7 +40,6 @@ struct Home: View {
                     
                     Spacer()
                     
-                   // expandCards ? NavButton(name: "plus") : EmptyView()
                     if expandCards{ EmptyView()
                     } else {
                         NavButton(name: "shippingbox.circle.fill")
@@ -79,11 +78,13 @@ struct Home: View {
                                 } // chiusura withAnimation1
                             } // chiusura TapGesture1
                         
+                            .padding(.top, expandCards ? 30 : 0)
+                        
                     } // chiusura overlay1
                     
                 } // chiusura ScrollView
                 .coordinateSpace(name: "SCROLL")
-                .offset(y:30)
+                .offset(y: expandCards ? 0 : 30)
                 
                 
             } // chiusura VStack 1
@@ -170,3 +171,4 @@ struct Home_Previews: PreviewProvider {
         Home()
     }
 }
+
