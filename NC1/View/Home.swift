@@ -14,11 +14,11 @@ struct Home: View {
         NavigationView(){
             VStack (spacing:0){
                 HStack {
-                    Text("Wallet")
+                    Text(expandCards ? "": "Wallet")
                         .font(.largeTitle)
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .overlay(alignment: .trailing){
+                        .overlay(alignment: .leading){
                             // MARK: Close Button
                             Button {
                                 // Closing Cards
@@ -28,6 +28,7 @@ struct Home: View {
                             } label: {
                                 Text("Done")
                                     .padding(10)
+                                
                             }
                             .rotationEffect(.init(degrees: expandCards ? 0 :  0))
                             .offset(x: expandCards ? 10 : 15 )
@@ -39,14 +40,22 @@ struct Home: View {
                     
                     Spacer()
                     
-                    Button {}
-                label: { Image(systemName: "plus.circle.fill")
-                        .foregroundColor(.black)
-                } // chiusura Lable2
-                    Button {}
-                label: { Image(systemName: "shippingbox.circle.fill")
-                        .foregroundColor(.black)
-                } // chiusura label3
+                   // expandCards ? NavButton(name: "plus") : EmptyView()
+                    if expandCards{ EmptyView()
+                    } else {
+                        NavButton(name: "shippingbox.circle.fill")
+                    }
+                    if expandCards{
+                        EmptyView()
+                    } else {
+                        NavButton(name: "plus.circle.fill")
+                    }
+                    if expandCards{
+                        NavButton(name: "ellipsis.circle.fill")
+                    } else {
+                        EmptyView()
+                    }
+                
                 } // chiusura HStack1
                 ScrollView(.vertical, showsIndicators: false){
                     
