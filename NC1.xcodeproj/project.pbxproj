@@ -11,6 +11,8 @@
 		32076A322926992C00AAF19C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32076A312926992C00AAF19C /* ContentView.swift */; };
 		32076A342926992C00AAF19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32076A332926992C00AAF19C /* Assets.xcassets */; };
 		32076A372926992C00AAF19C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32076A362926992C00AAF19C /* Preview Assets.xcassets */; };
+		32C1E15B292E545600F4CD00 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1E15A292E545600F4CD00 /* Card.swift */; };
+		32C1E15D292E548C00F4CD00 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1E15C292E548C00F4CD00 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		32076A312926992C00AAF19C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32076A332926992C00AAF19C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32076A362926992C00AAF19C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32C1E15A292E545600F4CD00 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		32C1E15C292E548C00F4CD00 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		32076A2E2926992C00AAF19C /* NC1 */ = {
 			isa = PBXGroup;
 			children = (
+				32C1E159292E543700F4CD00 /* View */,
+				32C1E158292E543100F4CD00 /* Model */,
 				32076A2F2926992C00AAF19C /* NC1App.swift */,
 				32076A312926992C00AAF19C /* ContentView.swift */,
 				32076A332926992C00AAF19C /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				32076A362926992C00AAF19C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		32C1E158292E543100F4CD00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32C1E15A292E545600F4CD00 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32C1E159292E543700F4CD00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32C1E15C292E548C00F4CD00 /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				32076A322926992C00AAF19C /* ContentView.swift in Sources */,
+				32C1E15B292E545600F4CD00 /* Card.swift in Sources */,
+				32C1E15D292E548C00F4CD00 /* Home.swift in Sources */,
 				32076A302926992C00AAF19C /* NC1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
