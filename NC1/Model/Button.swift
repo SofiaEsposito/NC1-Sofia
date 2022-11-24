@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct NavButton: View {
-    var name:String
+    var name: String
+    var destination = AddToWallet()
     
     var body: some View {
         
        
-        Button {
-            
+        Button { destination
         }
     label: { Image(systemName: name)
             .foregroundColor(.black)

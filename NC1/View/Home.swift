@@ -47,12 +47,14 @@ struct Home: View {
                     
                     if expandCards{ EmptyView()
                     } else {
-                        NavButton(name: "shippingbox.circle.fill")
+                        NavigationLink{ Orders() }
+                    label: { Image(systemName:"shippingbox.circle.fill")}
                     }
                     if expandCards{
                         EmptyView()
                     } else {
-                        NavButton(name: "plus.circle.fill")
+                        NavigationLink{ AddToWallet() }
+                    label: {Image(systemName: "plus.circle.fill")}
                     }
                     if expandCards{
                         NavButton(name: "ellipsis.circle.fill")

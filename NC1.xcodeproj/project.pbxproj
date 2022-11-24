@@ -15,6 +15,8 @@
 		32C1E15D292E548C00F4CD00 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1E15C292E548C00F4CD00 /* Home.swift */; };
 		32C1E161292E811800F4CD00 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1E160292E811800F4CD00 /* Button.swift */; };
 		32D0385B292FC97B001A5F7A /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D0385A292FC97B001A5F7A /* Expenses.swift */; };
+		32D0385D292FD0F6001A5F7A /* AddToWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D0385C292FD0F6001A5F7A /* AddToWallet.swift */; };
+		32D0385F292FD224001A5F7A /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D0385E292FD224001A5F7A /* Orders.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		32C1E15C292E548C00F4CD00 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		32C1E160292E811800F4CD00 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		32D0385A292FC97B001A5F7A /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		32D0385C292FD0F6001A5F7A /* AddToWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToWallet.swift; sourceTree = "<group>"; };
+		32D0385E292FD224001A5F7A /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				32C1E15C292E548C00F4CD00 /* Home.swift */,
+				32D0385C292FD0F6001A5F7A /* AddToWallet.swift */,
+				32D0385E292FD224001A5F7A /* Orders.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,9 +173,11 @@
 			files = (
 				32D0385B292FC97B001A5F7A /* Expenses.swift in Sources */,
 				32C1E161292E811800F4CD00 /* Button.swift in Sources */,
+				32D0385D292FD0F6001A5F7A /* AddToWallet.swift in Sources */,
 				32076A322926992C00AAF19C /* ContentView.swift in Sources */,
 				32C1E15B292E545600F4CD00 /* Card.swift in Sources */,
 				32C1E15D292E548C00F4CD00 /* Home.swift in Sources */,
+				32D0385F292FD224001A5F7A /* Orders.swift in Sources */,
 				32076A302926992C00AAF19C /* NC1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
