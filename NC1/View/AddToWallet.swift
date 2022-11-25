@@ -9,10 +9,18 @@ import SwiftUI
 
 struct AddToWallet: View {
     var body: some View {
-        Text("You don't have money anymore")
-            .fontWeight(.bold)
-            .foregroundColor(Color.red)
-            .foregroundColor(Color.red)
+        NavigationView{
+            VStack{
+                Image("sticker1")
+                    .resizable()
+                    .frame(width:200, height: 200)
+                Text("You don't have money anymore")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.red)
+                    .foregroundColor(Color.red)
+            }
+            
+        } .navigationTitle("Add to Wallet")
     }
 }
 

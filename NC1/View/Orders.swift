@@ -9,10 +9,18 @@ import SwiftUI
 
 struct Orders: View {
     var body: some View {
-        Text("STOP TO BUY THINGS!")
-            .fontWeight(.bold)
-            .foregroundColor(Color.red)
-            .foregroundColor(Color.red)
+        NavigationView{
+            VStack{
+                Image("sticker-2")
+                    .resizable()
+                    .frame(width:200, height: 200)
+                Text("STOP TO BUY THINGS!")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.red)
+                    .foregroundColor(Color.red)
+                
+            }
+        }.navigationTitle("Orders")
     }
 }
 
